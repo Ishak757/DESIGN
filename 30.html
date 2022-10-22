@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Media queries all</title>
+    <style>
+        .box{
+            background-color: red;
+            color: black;
+            font-size: 72px;
+            text-align: center;
+            display: none;
+        }
+        @media (max-width:400px){
+            #box1{display: block;
+                background-color: aqua;
+            }
+        }
+
+        @media (max-width:500px) and (min-width:300px){
+            #box2{display: block;
+                background-color: blue;
+            }
+        }
+        @media (max-width:800px) and (min-width:500px){
+            #box3{display: block;
+                color: black;
+                background-color: yellow;
+            }
+        }
+        @media (min-width:800px){
+            #box4{display: block;
+                background-color: rgb(235, 11, 216);
+            }
+        }
+    </style>
+</head>
+<body class="container">
+    <div class="box" id="box1">This is box one</div>
+    <div class="box" id="box2">This is box two</div>
+    <div class="box" id="box3">This is box three</div>
+    <div class="box" id="box4">This is box four</div>
+</body>
+</html>

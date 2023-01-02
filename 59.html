@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Date</title>
+</head>
+<style>
+    .container{
+             font-size: 23px;
+             background-color: aqua;
+             border: 2px solid greenyellow;
+             padding: 34px;
+             margin: 4px;
+             text-align: center;
+    }
+    #time{
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+        current time is 
+        <span id="time">
+
+        </span>
+    </div>
+    <script>
+        console.log("This is Javascript time tuturial")
+        let dt = new Date();
+        console.log(dt)
+        let newDate = new Date("2029-4-10");
+        console.log(newDate) 
+        let newDate = new Date(2030, 9, 4, 6, 34, 12);
+        console.log(newDate)
+        let year = newDate.getFullYear();
+        console.log("The year is ",year);
+
+        let month = newDate.getMonth();
+        console.log("The month is ",month);
+
+        let date = newDate.getDate();
+        console.log("The date is ",date);
+
+        let hours = newDate.getHours();
+        console.log("The time is ",hours);
+
+        newDate.setDate(20);
+        newDate.setHours(4)
+        newDate.setMinutes(40)
+        newDate.setSeconds(9);
+        console.log(newDate)
+        setInterval(UpdateTime, 1000s);
+        function UpdateTime(){
+            time.innerHTML = new Date();
+   }
+    </script>
+</body>
+</html>

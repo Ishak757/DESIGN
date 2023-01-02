@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Settimeout and clearitmeout</title>
+</head>
+<body>
+    <div class="container">
+        <span id="time"></span>
+
+    </div>
+    <script>
+        console.log('This is tutorial 58');
+        console.log('This is tutorial 58');
+        // setTimeout --> Allows us to run the function once after the interval of time; 
+        // clearTimeout --> Allows us to run the function repeteadly after the interval of time; 
+        function greet(name,bytext){
+            console.log("Hello good morning " + name +","+ bytext);
+        }
+        timeout = setTimeout(greet, 5000,"Shibli","Take care");
+        console.log(timeout);
+        // clearTimeout(timeout);
+        // setTimeout(greet(),2000 );--> Wrong as it is calling the funciton inside the funciton
+        // intervalId = setInterval(greet , 2000, Shibli ,Goodnight);
+        // clearInterval(intervalId);
+        function displayTime(){
+            time = new Date();
+            console.log = (time);
+            document.getElementById('time').innerHTML = time;
+        }
+    setInterval(displayTime, 1000);
+    </script>
+</body>
+</html>
